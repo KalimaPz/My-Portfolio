@@ -40,13 +40,7 @@
       <!-- <div class="text-xl px-16 py-12 flex flex-row justify-end text-blue-700">
         View More
       </div> -->
-      <button @click="toggleDialog = !toggleDialog">More</button>
-      <div
-        class="w-1/2 h-1/2 bg-gray-300 absolute transition-opacity duration-300"
-        v-if="toggleDialog"
-      >
-        s
-      </div>
+      
     </div>
   </div>
 </template>
