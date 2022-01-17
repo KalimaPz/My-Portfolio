@@ -27,7 +27,7 @@
         </div>
         <div class="flex flex-row justify-evenly my-4">
           <button class="bg-green-500 px-4 py-3 rounded text-white">Get Started</button>
-          <button class="text-white">View My Work</button>
+          <button @click="showCase" class="text-white">View My Work</button>
         </div>
 
         <div class="flex flex-row justify-between mx-8 my-8">
@@ -37,7 +37,7 @@
             :icon="['fab', 'linkedin']"
           />
           <font-awesome-icon
-            class="social-icon"
+            class="social-icon  "
             size="3x"
             :icon="['fab', 'github']"
           />
@@ -70,12 +70,20 @@ export default {
       personalStatement: "Seize the Day. Never Stop to Learn",
     };
   },
+  methods : {
+    showCase() {
+      this.$router.push('/showcase')
+    }
+  }
 };
 </script>
 
 <style scoped>
+.social {
+  fill: aqua;
+}
 .social:hover {
-  color: white;
+  color: red;
 }
 .profile {
   background-image: url("../assets/profile.png");

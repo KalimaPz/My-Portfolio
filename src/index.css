@@ -3,14 +3,16 @@
 @tailwind utilities;
 
 .educate-card {
-    @apply bg-gray-800 duration-700 text-white; 
+    @apply bg-gray-800  text-white duration-700 
+    hover:shadow-2xl 
+    hover:bg-green-600
+    hover:text-white
+    rounded-2xl; 
     letter-spacing: 1.25px;
 }
 
-
-
-
 .social-icon {
-    color : white;
+    
+    @apply duration-700 text-white hover:text-green-400
 }
 

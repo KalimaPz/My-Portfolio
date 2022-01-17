@@ -1,8 +1,8 @@
 <template>
 
-  <div class=" flex flex-col  ">
+  <div class=" flex flex-col bg-gray-800 ">
     <div>
-      <div class="text-xl text-center xl:text-left xl:text-2xl text-gray-700 m-4 text-opacity-90" ><strong>Education</strong></div>
+      <div class="text-xl text-center xl:text-left xl:text-2xl text-white m-12 p-4  bg-gray-800 rounded-lg" ><strong>Education</strong></div>
       <div class="flex flex-col xl:flex-row">
         <Educate
           icon="education.png"
@@ -21,7 +21,7 @@
         />
       </div>
     </div>
-    <div class="text-center xl:text-left text-xl xl:text-2xl text-gray-700 m-4 text-opacity-90" ><strong>Work Experiences</strong></div>
+    <div class="text-center xl:text-left text-xl xl:text-2xl text-white m-4 p-4 bg-gray-800 rounded-lg" ><strong>Work Experiences</strong></div>
     <div class="
     flex 
     flex-col

@@ -10,7 +10,7 @@
     xl:w-1/2 
     xl:justify-evenly
     mx-4 
-    my-4 educate-card hover:shadow-2xl rounded-2xl"
+    my-4 educate-card "
   >
     <div class="
     flex 

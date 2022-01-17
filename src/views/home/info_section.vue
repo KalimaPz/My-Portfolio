@@ -1,10 +1,10 @@
 <template>
-<div class="xl:h-screen" >
-  
-  <div class="xl:h-1/2  flex flex-col xl:flex-row">
-  <div class="text-gray-700 m-4 text-xl xl:text-2xl text-opacity-90">
+<div class=" bg-gray-800" >
+   <div class="text-white m-8 text-xl xl:text-2xl ">
     <strong>Knowledge</strong>
   </div>
+  <div class="xl:h-1/2 mx-10 flex flex-col xl:flex-row ">
+ 
         <Specialization
           class="self-center "
           title="Mobile Applicaion"
@@ -34,13 +34,13 @@
           :desc="back_desc"
         />
   </div>
-  <div class="text-xl xl:text-2xl m-4 text-gray-700 text-opacity-90">
-    <strong>Framework</strong>
+  <div class="text-xl xl:text-2xl m-8 text-white ">
+    <strong>My Stack</strong>
   </div>
-  <div class="mx-8 xl:h-1/2  flex flex-col  xl:flex-row xl:justify-evenly">
+  <div class="m-12 py-8 xl:h-1/2  flex flex-col  xl:flex-row xl:justify-evenly bg-white rounded-2xl">
   
-        <div class="self-center my-4">
-          <img class="skills flutter" src="../../assets/skills/flutter.png" />
+        <div class="self-center my-4 ">
+          <img class="skills flutter " src="../../assets/skills/flutter.png" />
         </div>
         <div class="self-center my-4"><img class="skills vue" src="../../assets/skills/vue.png" /></div>
         <div class="self-center my-4">
@@ -50,6 +50,7 @@
           <img class="skills fast" src="../../assets/skills/fastapi.png" />
         </div>
   </div>
+ 
 </div>
  
 </template>
@@ -67,7 +68,7 @@ export default {
       mobile_desc:
         "Expert in Flutter Mobile Framework for 3 years. Able to develop both of IOS and Android platform.",
       front_desc:
-        "Well-known in Vue Framework for developed web application. Able to use React sometimes including CSS Framework such like Vuetify , Tailwind and Ant Design",
+        "Well-known in Vue Framework for developed web application.  including CSS Framework such like Vuetify Tailwind and Ant Design",
       back_desc:
         "Beginner in FastAPI(Python) , Express (Node.js) well-known CRUD Operation Basic API and No-SQL (MongoDB)",
     };
