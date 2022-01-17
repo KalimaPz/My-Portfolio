@@ -2,10 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-.social-icon {
-    color: white;
+.educate-card {
+    @apply bg-gray-800 duration-700 text-white; 
+    letter-spacing: 1.25px;
 }
 
 
 
+
+.social-icon {
+    color : white;
+}
 

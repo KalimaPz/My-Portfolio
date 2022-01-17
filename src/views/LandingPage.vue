@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-row h-screen w-screen bg-gray-800 relative">
-    <Navigator class="absolute w-screen" />
+    <!-- <Navigator class="absolute w-screen" /> -->
     <div class="w-1/2 flex flex-col justify-center">
       <div
         class="
@@ -17,18 +17,17 @@
       ></div>
     </div>
     <div class="w-1/2 h-1/2 flex flex-col justify-evenly my-auto">
-      <div class="text-white text-4xl leading-10">
-        Let's Talk About<br />
-        Startups That<br />
-        People Like
+      <div class="text-white text-4xl">
+        Donnukrit Satirakul<br />
+        <div class="text-3xl py-2">Software Engineer</div>
       </div>
       <div class="text-white">
-        Morbi eu gravida lectus. Sed id tellus ac risus scelerisque<br />Morbi
-        eu gravida lectus. Sed id tellus ac risus scelerisque
+        {{ personalStatement }}
       </div>
       <div class="flex flex-row">
-        <button class="px-10 py-5 bg-green-400 text-white">Let's Talk</button>
-        <button class="px-10 py-5 text-white">View our Work!</button>
+        <!-- <button class="px-10 py-5 bg-green-400 text-white">Get Started</button> -->
+        <t-button>Example button</t-button>
+        <button class="px-10 py-5 text-white">View my Work</button>
       </div>
 
       <div class="flex flex-row justify-between w-1/2">
@@ -58,12 +57,17 @@
 </template>
 
 <script>
-import Navigator from "../components/navigator.vue";
+// import Navigator from "../components/navigator.vue";
 
 export default {
   name: "LandingPage",
   components: {
-    Navigator,
+    // Navigator,
+  },
+  data: () => {
+    return {
+      personalStatement: "Seize the Day. Never Stop to Learn",
+    };
   },
 };
 </script>

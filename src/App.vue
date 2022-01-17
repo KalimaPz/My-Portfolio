@@ -1,6 +1,8 @@
 <template>
   <div>
-    <!-- <Navigator /> -->
+    <!-- <div ref="actionA" @focus="setA">A : {{ a }}</div>
+    <div ref="actionB" @focus="setB">B :{{ b }}</div> -->
+    <Navigator />
     <router-view />
   </div>
 </template>
@@ -9,6 +11,19 @@
 export default {
   created() {
     this.$store.dispatch("setAvatar");
+    this.$refs.actionA.focus();
+  },
+
+  methods: {
+    setA() {
+      this.a = 5;
+    },
+    setB() {
+      this.b = 6;
+    },
+  },
+  data: () => {
+    return { a: 0, b: 1 };
   },
 };
 </script>
