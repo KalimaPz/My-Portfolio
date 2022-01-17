@@ -1,48 +1,49 @@
 <template>
-  <div class="h-screen flex flex-col">
-    <div class="h-1/2 flex flex-col">
-      <div class="text-2xl px-12 py-8">Specialization</div>
-      <div class="flex flex-row justify-evenly">
+<div class="h-screen">
+  <div class="xl:h-1/2  flex flex-col xl:flex-row">
         <Specialization
-          class="w-1/5 self-center"
+          class="self-center "
           title="Mobile Applicaion"
           image="user-interface.png"
+          role="Mobile"
           :desc="mobile_desc"
         />
         <Specialization
-          class="w-1/5 self-center"
+          class="self-center "
           title="Front-End"
           image="website-design.png"
+          role="Front End"
           :desc="front_desc"
         />
         <Specialization
-          class="w-1/5 self-center"
+          class="self-center"
           title="Scrum"
           image="scrum.png"
+          role="Workflow Management"
           desc="Experienced in SCRUM Software Project management and bussiness workflow tool like Asana, Trello"
         />
         <Specialization
-          class="w-1/5 self-center"
+          class="self-center"
           title="Back-End"
           image="backend.png"
+          role="Backend"
           :desc="back_desc"
         />
-      </div>
-    </div>
-    <div class="h-1/2 flex flex-col justify-start">
-      <div class="text-2xl px-12 py-12">Skills</div>
-      <div class="flex flex-row justify-evenly">
-        <img class="h-24" src="../../assets/skills/flutter.png" />
-        <img class="h-24" src="../../assets/skills/vue.png" />
-        <img class="h-24" src="../../assets/skills/react.png" />
-        <img class="h-24" src="../../assets/skills/fastapi.png" />
-      </div>
-      <!-- <div class="text-xl px-16 py-12 flex flex-row justify-end text-blue-700">
-        View More
-      </div> -->
-      
-    </div>
   </div>
+  <div class="mx-8 xl:h-1/2  flex flex-col  xl:flex-row xl:justify-evenly">
+        <div class="self-center my-4">
+          <img class="skills flutter" src="../../assets/skills/flutter.png" />
+        </div>
+        <div class="self-center my-4"><img class="skills vue" src="../../assets/skills/vue.png" /></div>
+        <div class="self-center my-4">
+          <img class="skills react" src="../../assets/skills/react.png" />
+        </div>
+        <div class="self-center my-4">
+          <img class="skills fast" src="../../assets/skills/fastapi.png" />
+        </div>
+  </div>
+</div>
+ 
 </template>
 
 <script>
@@ -66,5 +67,25 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.skills {
+
+}
+.flutter {
+  
+  height: 75px;
+}
+
+.vue {
+  height: 75px;
+}
+
+.react {
+
+  height:75px;
+}
+
+.fast {
+  height: 75px;
+}
 </style>

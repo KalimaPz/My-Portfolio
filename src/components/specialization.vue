@@ -1,20 +1,20 @@
 <template>
-  <div class="flex flex-col h-2/3">
-    <div class="flex flex-row justify-center">
-      <img class="w-16 h-16 my-5" :src="require(`../assets/icons/${image}`)" />
-    </div>
-    <div class="flex flex-row justify-center">{{ title }}</div>
-    <div class="flex flex-row px-4 py-4 text-center text-gray-500">
+  <div class="flex flex-col p-4 justify-between w-full h-1/2 mx-4">
+    <div> 
+      <img class="w-16 h-16  mx-auto my-8" :src="require(`../assets/icons/${image}`)" />
+      </div>
+      <div class="text-center"><b>{{ role }}</b></div>
+    <div>
       {{ desc }}
     </div>
-    <div>{{ imagePath }}</div>
   </div>
+ 
 </template>
 
 <script>
 export default {
   name: "Specialization",
-  props: ["title", "desc", "image"],
+  props: ["title", "desc", "image","role"],
 };
 </script>
 

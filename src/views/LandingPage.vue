@@ -12,6 +12,8 @@
           h-64
           w-64
           bg-cover
+          xl:h-96
+           xl:w-72
         "
       ></div>
 
