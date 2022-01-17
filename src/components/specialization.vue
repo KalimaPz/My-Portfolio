@@ -3,8 +3,8 @@
     <div> 
       <img class="w-16 h-16  mx-auto my-8" :src="require(`../assets/icons/${image}`)" />
       </div>
-      <div class="text-center"><b>{{ role }}</b></div>
-    <div>
+      <div class="text-center text-gray-700"><strong>{{ role }}</strong></div>
+    <div class="text-gray-600">
       {{ desc }}
     </div>
   </div>

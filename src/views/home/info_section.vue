@@ -1,6 +1,10 @@
 <template>
-<div class="h-screen">
+<div class="xl:h-screen" >
+  
   <div class="xl:h-1/2  flex flex-col xl:flex-row">
+  <div class="text-gray-700 m-4 text-xl xl:text-2xl text-opacity-90">
+    <strong>Knowledge</strong>
+  </div>
         <Specialization
           class="self-center "
           title="Mobile Applicaion"
@@ -30,7 +34,11 @@
           :desc="back_desc"
         />
   </div>
+  <div class="text-xl xl:text-2xl m-4 text-gray-700 text-opacity-90">
+    <strong>Framework</strong>
+  </div>
   <div class="mx-8 xl:h-1/2  flex flex-col  xl:flex-row xl:justify-evenly">
+  
         <div class="self-center my-4">
           <img class="skills flutter" src="../../assets/skills/flutter.png" />
         </div>
@@ -68,9 +76,7 @@ export default {
 </script>
 
 <style scoped>
-.skills {
 
-}
 .flutter {
   
   height: 75px;

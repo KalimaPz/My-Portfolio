@@ -1,11 +1,27 @@
 <template>
   <div
-    class="flex flex-row h-64 mx-4 educate-card hover:shadow-2xl rounded-2xl"
+    class="
+    flex 
+    flex-col 
+   
+   justify-center
+    h-64 
+    xl:flex-row 
+    xl:w-1/2 
+    xl:justify-evenly
+    mx-4 
+    my-4 educate-card hover:shadow-2xl rounded-2xl"
   >
-    <div class="w-2/5 flex flex-row justify-center">
-      <img class="w-2/5 self-center" :src="require(`../assets/${icon}`)" />
+    <div class="
+    flex 
+    flex-row
+    w-12 
+    self-center
+    xl:w-24 m-4  
+     ">
+      <img  :src="require(`../assets/${icon}`)" />
     </div>
-    <div class="w-3/5 flex flex-col my-auto">
+    <div class="flex xl:my-auto flex-col ">
       <div class="self-center text-xl">{{ title }}</div>
       <div class="self-center">{{ subtitle }}</div>
       <div class="self-center">{{ period }}</div>

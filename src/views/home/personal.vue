@@ -1,8 +1,9 @@
 <template>
-  <div class="h-screen flex flex-col">
-    <div class="h-1/2 px-12 flex flex-col justify-evenly">
-      <div class="text-2xl">Education</div>
-      <div class="flex flex-row xs:flex-col sm:">
+
+  <div class=" flex flex-col  ">
+    <div>
+      <div class="text-xl text-center xl:text-left xl:text-2xl text-gray-700 m-4 text-opacity-90" ><strong>Education</strong></div>
+      <div class="flex flex-col xl:flex-row">
         <Educate
           icon="education.png"
           title="Prince of Songkhla University"
@@ -20,11 +21,16 @@
         />
       </div>
     </div>
-    <div class="h-1/2 flex flex-col px-12 justify-evenly">
-      <div class="text-2xl">Work Experience</div>
-      <div class="flex flex-row">
-        <Work
-          class="w-1/4"
+    <div class="text-center xl:text-left text-xl xl:text-2xl text-gray-700 m-4 text-opacity-90" ><strong>Work Experiences</strong></div>
+    <div class="
+    flex 
+    flex-col
+    xl:flex-row
+    xl:justify-center
+    ">
+      
+     <Work
+          
           icon="do.jpeg"
           title="Software Engineer"
           subtitle="Digital Organic"
@@ -32,7 +38,7 @@
           detail="Bangkok, Thailand"
         />
         <Work
-          class="w-1/4"
+          
           icon="alicorn.png"
           title="Front-End Developer"
           subtitle="Alicorn Tech"
@@ -40,7 +46,7 @@
           detail="Muang Phuket, Phuket, Thailand"
         />
         <Work
-          class="w-1/4"
+          
           icon="weserve.png"
           title="Mobile Developer"
           subtitle="Weserve"
@@ -48,14 +54,13 @@
           detail="Muang Phuket, Phuket, Thailand"
         />
         <Work
-          class="w-1/4"
+         
           icon="weserve.png"
           title="Internship"
           subtitle="Weserve"
           period="May - July 2020"
           detail="Muang Phuket, Phuket, Thailand"
         />
-      </div>
     </div>
   </div>
 </template>

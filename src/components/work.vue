@@ -1,11 +1,14 @@
 <template>
   <div
     class="
-      flex flex-col
+      mx-4
+      my-4
+      p-4
+      flex 
+      flex-col
+      xl:flex-row
       justify-between
       bg-gray-800
-      py-8
-      mx-4
       rounded-2xl
       hover:shadow-2xl
       duration-700
@@ -13,24 +16,17 @@
   >
     <div class="self-center my-2">
       <img
-        class="w-24 rounded-lg shadow-md"
+        class="w-24 xl:w-20 rounded-lg shadow-md"
         :src="require(`../assets/${icon}`)"
       />
     </div>
-    <div class="flex flex-col text-white">
-      <div class="text-center">{{ subtitle }}</div>
-      <div class="text-center">{{ title }}</div>
-      <div class="text-center">{{ period }}</div>
+    <div class="flex flex-col ml-4 justify-center text-white">
+      <div class="text-center xl:text-left">{{ subtitle }}</div>
+      <div class="text-center xl:text-left">{{ title }}</div>
+      <div class="text-center xl:text-left">{{ period }}</div>
     </div>
   </div>
-  <!-- <div class="flex flex-col h-64 mx-1 shadow educate-card">
-    <div class="flex flex-row justify-center h-2/4">
-      <img class="my-4" :src="require(`../assets/${icon}`)" />
-    </div>
-    <div class="h-2/4 flex flex-col justify-center">
-      
-    </div>
-  </div> -->
+
 </template>
 
 <script>
