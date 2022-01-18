@@ -26,31 +26,39 @@
           {{ personalStatement }}
         </div>
         <div class="flex flex-row justify-evenly my-4">
-          <button class="bg-green-500 px-4 py-3 rounded text-white">Get Started</button>
+          <button class="bg-green-500 px-4 py-3 rounded text-white" v-scroll-to="'#element'">Get Started</button>
           <button @click="showCase" class="text-white">View My Work</button>
         </div>
 
         <div class="flex flex-row justify-between mx-8 my-8">
-          <font-awesome-icon
+         <a href="https://www.linkedin.com/in/donnukrit">
+            <font-awesome-icon
             class="social-icon"
             size="3x"
             :icon="['fab', 'linkedin']"
           />
-          <font-awesome-icon
+         </a>
+          <a href="https://github.com/KalimaPz">
+            <font-awesome-icon
             class="social-icon  "
             size="3x"
             :icon="['fab', 'github']"
           />
-          <font-awesome-icon
+          </a>
+         <a href="https://medium.com/@donnukrit-s">
+            <font-awesome-icon
             class="social-icon"
             size="3x"
             :icon="['fab', 'medium']"
           />
-          <font-awesome-icon
+         </a>
+         <a href="https://instagram.com/i.phone97se">
+            <font-awesome-icon
             class="social-icon"
             size="3x"
             :icon="['fab', 'instagram-square']"
           />
+         </a>
         </div>
       </div>
     </div>
@@ -73,7 +81,9 @@ export default {
   methods : {
     showCase() {
       this.$router.push('/showcase')
-    }
+    },
+
+ 
   }
 };
 </script>
